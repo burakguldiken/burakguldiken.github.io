@@ -74,22 +74,37 @@
 						</div>
 					</section>
 
-				<!-- Three -->
-					<section id="three">
-						<h2>Send Mail</h2>
+					<!-- Three -->
+					<div class="content">
+						<h2><strong>Send Mail </strong> </h2>
 						<p>You can send mail with name, email and message.</p>
 						<div class="row">
 							<div class="col-8 col-12-small">
-								<form method="post" action="#">
-									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+								<form action="https://formspree.io/f/mayaellb" method="POST">
+									<div class="fields">
+										<div class="field half">
+											<label>
+												Email
+												<input type="email" name="_replyto" placeholder="Email">
+											</label>
+										</div>
+										<div class="field half">
+											<label>
+												Name
+												<input type="text" name="name" placeholder="Name">
+											</label>
+										</div>
+										<div class="field">
+											<label>
+												Your message:
+												<textarea name="message"></textarea>
+											</label>
+										</div>
 									</div>
+									<ul class="actions">
+										<li><input type="submit" class="button primary" /></li>
+									</ul>
 								</form>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
 							</div>
 							<div class="col-4 col-12-small">
 								<ul class="labeled-icons">
@@ -104,7 +119,7 @@
 								</ul>
 							</div>
 						</div>
-					</section>
+					</div>
 				</div>
 
 		<!-- Footer -->
